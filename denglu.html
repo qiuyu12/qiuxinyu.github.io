@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>个人主页</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='denglu.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="from">
+    <div class="submit">
+        <form method="POST" action="/submit">
+        
+            <div class="form_input">
+                <span>昵称：</span>
+                <input class="inputs" type="text" name="name">
+            </div>
+            
+            <div class="form_input">
+                <span>邮箱:</span>
+                <input class="inputs" type="text" name="email">
+            </div>
+            
+            <div class="form_input">
+                <span>密码：</span>
+                <input class="inputs" type="text" name="password">
+            </div>
+            
+            <div class="btn_submit">
+                <button class="btn" type="submit">提交</button>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+</body>
+<html>
